@@ -19,8 +19,14 @@ font-weight: normal;    font-style: normal;
 }
 nav,.fig_caption,h1,h2,h3,h4,p,ul,table {     font-family: 'philosopherregular', Arial, sans-serif;
 	 }
+body{background:rgba(177, 240, 189, 1);
+     background:rgb(177, 240, 189);}
 nav ul li{display:inline-block;}
-nav ul li a{text-decoration: none;font-size:25px;}
+nav ul li a{text-decoration: none;font-size:25px;color:rgba(11, 20, 13, 1);
+			color:rgba(11, 20, 13);}
+nav ul li a:hover{color:rgba(140, 255, 163, 1);
+			color:rgba(140, 255, 163);}
+nav ul li{background:rgba(88, 161, 103, 1);background:rgb(88, 161, 103);}
 
 h1{font-size:60px;text-decoration: underline;}
 h2{font-size:35px;}
