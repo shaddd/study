@@ -1,0 +1,30 @@
+﻿
+
+
+
+
+@font-face {
+    font-family: 'philosopherregular';
+
+    src: url('./fonts/philosopher-regular-webfont.woff2') format('woff2'),
+
+         url('./fonts/philosopher-regular-webfont.woff') format('woff'),
+
+	 url('./fonts/Philosopher-Bold.ttf') format('truetype'),
+	 url('./fonts/Philosopher-Regular.ttf') format('truetype');
+    
+
+font-weight: normal;    font-style: normal;
+
+}
+nav,.fig_caption,h1,h2,h3,h4,p,ul,table {     font-family: 'philosopherregular', Arial, sans-serif;
+	 }
+nav ul li{display:inline-block;}
+nav ul li a{text-decoration: none;font-size:25px;}
+
+h1{font-size:60px;text-decoration: underline;}
+h2{font-size:35px;}
+h3{font-size:25px;}
+
+.fig_caption,
+footer{font-size:14px;}
