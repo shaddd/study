@@ -50,7 +50,7 @@ table, td {
 img,p{border:1px solid #F76A84FF;box-shadow:2px 2px 2px 2px #F76A84FF;padding:3px;}
 .fig_caption,
 footer{font-size:14px;}
-.img1,.img2{width:230px;overflow:hidden;}
+.img1,.img2{width:230px;overflow:hidden;background:#F76A84FF;}
 .img1{float:left;padding:5px;}
 .img2{float:right;padding:5px;}
 
