@@ -50,12 +50,15 @@ table, td {
 img,p{border:1px solid #F76A84FF;box-shadow:2px 2px 2px 2px #F76A84FF;padding:3px;}
 .fig_caption,
 footer{font-size:14px;}
+.img1,.img2{width:230px;overflow:hidden;}
+.img1{float:left;padding:5px;}
+.img2{float:right;padding:5px;}
 
-.img1,.img2{display:inline-block;padding-bottom:15px;}
+/*.img1,.img2{display:inline-block;padding-bottom:15px;}
 .img1{left:3px;}
-.img2{position:absolute;right:12px;}
+.img2{position:absolute;right:12px;}*/
 
 /*
 .img1,.img2{display:inline-block;margin-right:50%;}
-.img1{margin-left:3px;}
-.img2{margin-right:3px;}*/
+.img1{float:left;}
+.img2{float:right}*/
