@@ -24,13 +24,7 @@ background:rgb(177, 240, 189);
 background: radial-gradient(circle, rgba(180,11,104,1) 4%,
                 rgba(177, 240, 189) 27%, rgba(177, 240, 189) 64%,
 		 rgba(255,124,0,1) 92%); 
-   /*background: rgb(133,5,75);
-    background: radial-gradient(circle, rgba(133,5,75,1) 8%,
-                rgba(180,11,104,1) 27%, rgba(237,64,6,1) 64%,
-		 rgba(255,124,0,1) 92%); */
-
-/*background:rgba(177, 240, 189, 1);
-     background:rgb(177, 240, 189);*/}
+}
 header,nav,main{box-shadow:5px 5px 5px 5px #fff;padding:3px;margin-bottom :2px;transition:all 0.3s ease;}
 
 
@@ -45,23 +39,19 @@ header:hover
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
-.menu li:hover{background:rgba(180,11,104,1);
-	-webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-}
+
 p:hover
 {
         opacity:1;background:#53a7ea;transition:all 0.3s ease;
 }
 
-.menu li{display:inline-block;border-radius:5px ;padding:6px;}
+/*.menu li{display:inline-block;border-radius:5px ;padding:6px;}
 .menu li a,.Mobile_menu li a{text-decoration: none;font-size:25px;color:rgba(11, 20, 13, 1);
 			color:rgba(11, 20, 13);}
 .Mobile_menu li a:hover,.menu li a:hover{color:rgba(140, 255, 163, 1);
 			color:rgba(140, 255, 163);}
 .Mobile_menu li:hover,.menu li{background:rgba(88, 161, 103, 1);background:rgb(88, 161, 103);}
-/* Hide mobile menu ul and checkbox */
+/* Hide mobile menu ul and checkbox *
 .Mobile_menu,.side-menu ,.hamb{
     display: none;
 } .Mobile_menu{list-style:none;}
@@ -69,12 +59,131 @@ p:hover
 	    padding: 10px;
 	    width: 100%;
 	}
-/* Nav */
+/* Nav *
 .nav{
     width: 100%;
     background-color: transparent;
     overflow: hidden;
 
+}
+*/
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+/* Navbar section */
+
+.nav{
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.nav div.main_list{
+    width: 90%;
+    padding:3px;
+    
+}
+
+.nav div.main_list ul{
+    width:100%;
+    height: 65px;padding:0px;
+    display: flex;justify-content: space-between;
+    list-style: none;
+}
+
+.nav div.main_list ul li{
+
+	background:rgba(88, 161, 103, 1);
+	background:rgb(88, 161, 103);
+	border-radius:5px ;padding:6px;
+}
+.nav div.main_list ul li:hover{background:rgba(180,11,104,1);
+	-webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+.nav div.main_list ul li a{
+    text-decoration: none;
+    font-size:25px;color:rgba(11, 20, 13, 1);
+			color:rgba(11, 20, 13);
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover{
+    color:rgba(140, 255, 163, 1);
+			color:rgba(140, 255, 163);
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: red;	
+    position:absolute;
+    
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
 }
 
 
@@ -170,74 +279,68 @@ footer{font-size:14px;}
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
 }
-/* Menu Icon */
-.hamb{ background:red;
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-}/* Style label tag */
 
-.hamb-line {
-    background: white;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
 
-} /* Style span tag */
 
-.hamb-line::before,
-.hamb-line::after{
-    background: white;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
+
+
+/* Media query section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container{
+        margin: 0;
+    }
+    
 }
 
 
 
-/* Toggle menu icon */
-.side-menu:checked ~ ul.Mobile_menu {
-	    display: block;
-	
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-}
 
-
-/*media queries*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width:768px) {
 	.img1,.img2{
 			display:inline-block;float:none;margin-left:25%;
 		    }
-	ul.menu {
-   		 display: none;
-		} 
-	.hamb{display:block;}
-
-    .Mobile_menu li{
-        float: left;
+    
+    .container{
+        margin: 0;
     }
-
+    
+    
+    
+    .nav div.main_list{
+        width: 100%;
+        /*margin-top: 65px;*/
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+        height: auto;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    
+    .nav div.main_list ul li a{
+      text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+}
 
     
 }
